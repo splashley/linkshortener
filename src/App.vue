@@ -1,6 +1,8 @@
 <template>
   <div id="app">
     <NavBar />
+        <AdvancedStats />
+        <Boost />
     <TheFooter />
   </div>
 </template>
@@ -8,12 +10,16 @@
 <script>
 import NavBar from './components/NavBar.vue'
 import TheFooter from './components/TheFooter.vue'
+import Boost from './components/Boost.vue'
+import AdvancedStats from './components/AdvancedStats.vue'
 
 export default {
   name: 'App',
   components: {
     NavBar,
-    TheFooter
+    TheFooter,
+    Boost,
+    AdvancedStats
   }
 }
 </script>
