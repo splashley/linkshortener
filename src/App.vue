@@ -1,6 +1,8 @@
 <template>
   <div id="app">
     <NavBar />
+    <GetStarted />
+    <LinkShortenerForm />
         <AdvancedStats />
         <Boost />
     <TheFooter />
@@ -12,6 +14,8 @@ import NavBar from './components/NavBar.vue'
 import TheFooter from './components/TheFooter.vue'
 import Boost from './components/Boost.vue'
 import AdvancedStats from './components/AdvancedStats.vue'
+import LinkShortenerForm from './components/LinkShortenerForm.vue'
+import GetStarted from './components/GetStarted.vue'
 
 export default {
   name: 'App',
@@ -19,7 +23,9 @@ export default {
     NavBar,
     TheFooter,
     Boost,
-    AdvancedStats
+    AdvancedStats,
+    LinkShortenerForm,
+    GetStarted
   }
 }
 </script>
