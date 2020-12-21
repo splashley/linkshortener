@@ -4,8 +4,15 @@
      <img src="../assets/logo.svg">
    </div>
    <div class="NavBar-Desktop">
-     <div class=""></div>
-     <div class=""></div>
+     <div class="NavBar-Desktop-Left">
+     <a href="">Features</a>
+     <a href="">Pricing</a>
+     <a href="">Resources</a>
+     </div>
+     <div class="NavBar-Desktop-Right">
+     <a href="">Login</a>
+     <button class="HamburgerMenu-Links-SignupButton">Sign Up</button>
+     </div>
      </div>
    <div class="HamburgerMenu">
      <a href="javascript:void(0);" v-on:click="myFunction()">
@@ -121,8 +128,58 @@ header {
 }
 
 @media only screen and (min-width: 375px) {
+
+
   .HamburgerMenu {
     display: none;
   }
+
+  .NavBar-Desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .NavBar-Desktop-Right  {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .NavBar-Desktop-Left {
+    float: left;
+  }
+
+  .NavBar-Desktop-Left a {
+    text-decoration: none;
+    font-size: 16px;
+    color: hsl(257, 7%, 63%);
+    padding: 0 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+  }
+
+    .NavBar-Desktop-Right a {
+    text-decoration: none;
+    color: hsl(257, 7%, 63%);
+    padding: 0 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+  }
+
+  .HamburgerMenu-Links-SignupButton {
+   background-color: hsl(180, 66%, 49%);
+    color: white;
+    padding: 5px 10px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    border-radius: 15px;
+    border: none;
+    width: 90%;
+    margin: 0 auto;
+}
 }
 </style>
