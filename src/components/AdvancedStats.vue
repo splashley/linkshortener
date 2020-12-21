@@ -113,7 +113,8 @@ text-align: center;
     display: inherit;
     z-index: -2;
     background-color: rgb(240, 241, 246);
-    padding: 40px 0;
+    padding: 100px 0 50px 0;
+    margin-top: -50px;
 }
 
 .AdvancedStats-Mobile {

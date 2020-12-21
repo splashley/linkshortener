@@ -1,5 +1,12 @@
 <template>
 <div class="GetStarted-Div">
+        <div class="GetStarted-Div-Text-Desktop">
+        <h2>More than just shorter links</h2>
+
+  <p>Build your brand’s recognition and get detailed insights 
+  on how your links are performing.</p>
+<button class="GetStarted-Div-Text-Button">Get Started</button>
+    </div>
     <div class="GetStarted-Div-Image">
         <img src="../assets/illustration-working.svg" class="GetStarted-Div-Image-Svg">
     </div>
@@ -23,6 +30,10 @@ export default {
 .GetStarted-Div {
     display: flex;
     flex-direction: column;
+}
+
+.GetStarted-Div-Text-Desktop {
+    display: none;
 }
 
 .GetStarted-Div-Image {
@@ -65,9 +76,61 @@ text-align: right;
 }
 
 @media only screen and (min-width: 375px) {
+
     .GetStarted-Div {
     display: flex;
     flex-direction: row;
+    padding: 50px;
+    overflow: hidden;
+}
+
+.GetStarted-Div-Text-Desktop {
+    display: flex;
+    flex-direction: column;
+    padding-right: 80px;
+}
+
+.GetStarted-Div-Text {
+    display: none;
+}
+
+.GetStarted-Div-Image-Svg {
+ width: 60vw;
+ height: auto;
+ margin-right: -110px;
+ padding-left: 20px;
+}
+
+.GetStarted-Div-Text-Desktop h2 {
+    text-align: left;
+    color: hsl(255, 11%, 22%);
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: -0.10rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.GetStarted-Div-Text-Desktop p {
+    text-align: left;
+    color: hsl(257, 7%, 63%);
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+.GetStarted-Div-Text-Button {
+        background-color: hsl(180, 66%, 49%);
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    border-radius: 25px;
+    border: none;
+    width: 200px;
+    margin: 0;
 }
 }
 </style>

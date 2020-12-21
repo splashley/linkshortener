@@ -3,6 +3,10 @@
    <div class="Logo">
      <img src="../assets/logo.svg">
    </div>
+   <div class="NavBar-Desktop">
+     <div class=""></div>
+     <div class=""></div>
+     </div>
    <div class="HamburgerMenu">
      <a href="javascript:void(0);" v-on:click="myFunction()">
      <div class="HamburgerIcon"></div>
@@ -55,6 +59,10 @@ header {
 
 .Logo {
   padding-left: 30px;
+}
+
+.NavBar-Desktop {
+  display: none;
 }
 .HamburgerIcon {
     width: 30px;
@@ -110,5 +118,11 @@ header {
     border: none;
     width: 90%;
     margin: 0 auto;
+}
+
+@media only screen and (min-width: 375px) {
+  .HamburgerMenu {
+    display: none;
+  }
 }
 </style>

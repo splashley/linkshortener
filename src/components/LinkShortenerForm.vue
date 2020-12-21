@@ -20,7 +20,7 @@ export default {
     background-position-x: 100px;
     background-position-y: -20px;
     background-repeat: no-repeat;
-    margin: 20px;
+    margin: 20px 50px;
     padding: 20px 10px;
     border-radius: 10px;
 }
@@ -60,6 +60,7 @@ export default {
 
 @media only screen and (min-width: 375px) {
 .LinkShortenerDiv {
+      position: relative;
     background-color: hsl(257, 27%, 26%);
     background-image: url("../assets/bg-shorten-desktop.svg");
     background-position-x: 100px;
