@@ -30,7 +30,7 @@ text-align: right;
 }
 
 .GetStarted-Div-Image-Svg {
- width: 100%;
+ width: 100vw;
  height: auto;
  /* margin-right: -70px; */
 }
@@ -62,5 +62,12 @@ text-align: right;
     border: none;
     margin-top: 10px;
     margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 375px) {
+    .GetStarted-Div {
+    display: flex;
+    flex-direction: row;
+}
 }
 </style>

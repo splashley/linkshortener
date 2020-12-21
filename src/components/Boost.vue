@@ -35,4 +35,11 @@ export default {
     padding: 10px 25px;
     border: none;
 }
+
+@media only screen and (min-width: 375px) {
+.Boost {
+    background-image: url("../assets/bg-boost-desktop.svg");
+    background-repeat: no-repeat;
+}
+}
 </style>

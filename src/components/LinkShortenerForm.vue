@@ -57,4 +57,53 @@ export default {
     border: none;
     width: 90%;
 }
+
+@media only screen and (min-width: 375px) {
+.LinkShortenerDiv {
+    background-color: hsl(257, 27%, 26%);
+    background-image: url("../assets/bg-shorten-desktop.svg");
+    background-position-x: 100px;
+    background-position-y: -20px;
+    background-repeat: no-repeat;
+    margin-bottom: -30px;
+    padding: 30px;
+    border-radius: 10px;
+    z-index: ;
+}
+
+.LinkShortenerDiv-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    margin: auto;
+}
+
+.LinkShortenerDiv-form-input {
+    padding: 10px 0 10px 10px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+    margin-bottom: 0;
+    border: none;
+    width: 80%;
+        -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+.LinkShortenerDiv-form-button {
+    background-color: hsl(180, 66%, 49%);
+    color: white;
+    padding: 9px 20px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    border-radius: 5px;
+    border: none;
+    width: 200px;
+    margin-left: 10px;
+}
+}
+
 </style>
